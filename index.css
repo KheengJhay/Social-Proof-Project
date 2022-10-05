@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --veryDarkMagenta : hsl(300, 43%, 22%);
+    --softPink : hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-family: Arial;
+}
+body{
+    background-image: url(images/bg-pattern-top-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97.5vh;
+}
+div.main-text-container{
+    color: var(--veryDarkMagenta);
+    font-size: 2rem;
+    text-align: center;
+    width: 300px;
+    font-family: Arial Black;
+    margin-top: 55rem;
+}
+div.main-text-container > h3.main-text{
+    text-align: center;
+    width: 100%;
+}
+div.sub-text-container{
+    display: flex;
+    justify-content: center;
+    color: var(--darkGrayishMagenta);
+    width: 90%;
+    text-align: center;
+    margin: 0 20px 0 20px;
+}
+
+div.container > div.intro-main-container >  div.rating-root-container > div.rating-main-container{
+    background-color: var(--lightGrayishMagenta);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 0 15px;
+    border-radius: 10px;
+}
+div.rating-stars-container{
+    color: goldenrod;
+    margin-top: 10px;
+}
+h3.rating-text{
+    color: var(--veryDarkMagenta);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;
+}
+div.client-review-container{
+    background-color: var(--veryDarkMagenta);
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+div.client-review-container:last-child{
+    margin-bottom: 80px;
+}
+div.client-review-container > div.client-info-container {
+    display: flex;
+    align-items: center;
+}
+div.client-review-container > div.client-info-container > img{
+    border-radius: 40rem;
+    width: 50px;
+}
+div.client-text-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+}
+div.client-text-container > div.client-name{
+    color: var(--white);
+}
+div.client-text-container > div.client-status{
+    color: var(--softPink);
+    margin-top: 5px;
+}
+div.client-review-text{
+    color: var(--white);
+    font-weight: lighter;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 1024px) {
+    body{
+        background-image: url(images/bg-pattern-top-desktop.svg);
+    }
+    div.main-text-container{
+        font-size: 2rem;
+        text-align: left;
+        width: 400px;
+        margin: 1rem 0 0 50px;
+    }
+    div.main-text-container > h3.main-text{
+        text-align: left;
+        width: 100%;
+    }
+    div.intro-main-container{
+        display: flex;
+        align-items: center ;
+    }
+    div.container > div.intro-main-container > div.rating-root-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 150px 0 0;
+    }
+    div.container > div.intro-main-container >  div.rating-root-container > div.rating-main-container{
+        background-color: var(--lightGrayishMagenta);
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0 0 15px;
+        border-radius: 10px;
+    }
+    div.rating-stars-container{
+        color: goldenrod;
+        margin: 0 20px 0 0;
+    }
+    div.container > div.intro-main-container > div.rating-root-container > div.rating-main-container[data-type="2"]{
+        margin-left: 150px;
+    }
+    div.container > div.intro-main-container > div.rating-root-container > div.rating-main-container[data-type="3"]{
+        margin-left: 300px;
+    }
+    div.sub-text-container{
+        display: flex;
+        justify-content: center;
+        color: var(--darkGrayishMagenta);
+        width: 100%;
+        text-align: left;
+        margin: 0 20px 0 50px;
+        font-size: larger;
+    }
+    div.container > div.intro-main-container >  div.rating-root-container > div.rating-main-container{
+        width: 400px;
+        height: 55px;
+    }
+    div.client-review-container{
+        margin-top: 20px;
+        width: 30%;
+        height: 210px;
+    }
+    div.client-review-container[type="2"]{
+        margin-top: 40px;
+    }
+    div.client-review-container[type="3"]{
+        margin-top: 60px;
+    }
+    div.client-root-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    div.client-review-container:last-child{
+        margin-bottom: 0px;
+    }
+}
